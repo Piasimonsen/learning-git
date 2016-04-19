@@ -1,10 +1,13 @@
-Git             SVC (source version control) - Distributed Revision Control (in theory no master needed) -used from command line.
+Git             SVC (source version control) - Distributed Revision Control (intead of working copies, everybody has a their own full repository -> faster dev) -used from command line.
 Github          Conpany + reposotory hosting service with a grapichal interface
+
 Repository      A Project (local or fx on Github)
-Fork            Copy of a repository (starting point for own project or propose a change)
+Fork            Github copy of a repository (starting point for own project or propose a change)
+Clone           A local copy of a Github repository (add the URL after clone)
 
 Branches        Versions based on one base!
-Pull Requests   Request to you integrate changes into other branches
+Push            To remote reprository
+Pull            Request to you integrate changes into other branches (A pull request)
 
 Integrates change into anouther branch
 Merge           Means bringing the changes into you branch
@@ -13,24 +16,27 @@ Rebase          Means moving you changes on top of latest changes (creates a cle
 Forked history  Changes are made on two different branches
 Merge commit    
 Upstream changes
-Push            To local or remote reprository
 
-Working Directory - Local repository - Staging - Github Repository
-
+Working Directory - Local repository - Staging (let you group a set of changes) - Github Repository
 Cherry Pick, Issues, Gist
 
-Git Commands
-Git init
-Add (Local repository -> Staging)
-Commit -m "message" (Commit to repository)
+Git Commands >>>
+  Init (creating a git repository - or changes a unversioned project into a git repository)
+
+Git Workflow
+  Add (Local repository -> Staging)
+  Commit -m "message" (Commit to repository)
+
+
 Push (Staging -> Github Repository)
 Pull (Pull changes from Github Repository -> Local repository)
-Fork
-Clone 
+
+
 Git log
 Git status
 Git Blame
 Git Diff
-Linux Commands
 
-Setting Up Git
+Setting Up Git: Download Git, Create User, Setup User, Start :)
+
+(Basic Linux Commands: ls, cd, cd .., echo 'Hello, world.' >hello.txt)
