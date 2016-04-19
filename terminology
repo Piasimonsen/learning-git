@@ -1,4 +1,36 @@
-Repository      (project)
-Branches        (different versions based on one base)
-Pull Requests   (a request to you pull changes into other branches)
-Fork            (i do not know yet!)
+Git             SVC (source version control) - Distributed Revision Control (in theory no master needed) -used from command line.
+Github          Conpany + reposotory hosting service with a grapichal interface
+Repository      A Project (local or fx on Github)
+Fork            Copy of a repository (starting point for own project or propose a change)
+
+Branches        Versions based on one base!
+Pull Requests   Request to you integrate changes into other branches
+
+Integrates change into anouther branch
+Merge           Means bringing the changes into you branch
+Rebase          Means moving you changes on top of latest changes (creates a cleaner project history)
+
+Forked history  Changes are made on two different branches
+Merge commit    
+Upstream changes
+Push            To local or remote reprository
+
+Working Directory - Local repository - Staging - Github Repository
+
+Cherry Pick, Issues, Gist
+
+Git Commands
+Git init
+Add (Local repository -> Staging)
+Commit -m "message" (Commit to repository)
+Push (Staging -> Github Repository)
+Pull (Pull changes from Github Repository -> Local repository)
+Fork
+Clone 
+Git log
+Git status
+Git Blame
+Git Diff
+Linux Commands
+
+Setting Up Git
