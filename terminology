@@ -24,11 +24,10 @@ Git Commands >>>
   Init (creating a git repository - or changes a unversioned project into a git repository)
 
 Git Workflow
-  Add (Local repository -> Staging)
-  Commit -m "message" (Commit to repository)
+  Add (Working Directory -> Staging)
+  Commit -m "message" (Staging to Local Repository)
+  Push (Staging -> Github Repository)
 
-
-Push (Staging -> Github Repository)
 Pull (Pull changes from Github Repository -> Local repository)
 
 
