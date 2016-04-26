@@ -1,41 +1,16 @@
-Git             SVC (source version control) - Distributed Revision Control (intead of working copies, everybody has a their own full repository -> faster dev) -used from command line.
-Github          Conpany + reposotory hosting service with a grapichal interface
+GIT
+is a version control system (VCS), alternatives are CVS, SVN, . Git works with distributed revision control, instead of working copies, everybody has a their own full clone of the repository, which allows faster dev. It tracks change sets and not version, it takes a snapshot but only saves new versions of the files which changed.
+Git is a command line tool. its open source and based on unix. Github is the company, and a repository hosting service with a graphical interface for git.
 
-Repository      A Project (local or fx on Github)
-Fork            Github copy of a repository (starting point for own project or propose a change)
-Clone           A local copy of a Github repository (add the URL after clone)
+3 STATES (OR 4)
+There are three local states of the project and one remote state: (1) Working Copy  (2) Staging/Index (3) Local Repository (4) Remote Repository
 
-Branches        Versions based on one base!
-Push            To remote reprository
-Pull            Request to you integrate changes into other branches (A pull request)
+(1) The working copy is where you make the code changes. (2) Staging/Index is where you add our changes - from staging you can pick change sets that you wanna commit to you (3) local repository, which is a full history of the project with all previous changes. The remote repositories can e.g. be located on Github, which makes it easier to collaborate on a project. If you wanna work on other repositories you can make a fork, and that copies the repository to another remote repository, when you wanna make changes to it you start by making a remote clone of the repository (clone [repository URL]).  
 
-Integrates change into anouther branch
-Merge           Means bringing the changes into you branch
-Rebase          Means moving you changes on top of latest changes (creates a cleaner project history)
+Working Copy -> (ADD) ->  Staging/Index -> (COMMIT) -> Local Repository -> (PUSH and open PULL REQUEST) -> Remote Repository
+Working Copy <- (CHECKOUT) <-  Staging/Index <- (CLONE/PULL) <- Local Repository <- (CLONE/PULL) <- Remote Repository
 
-Forked history  Changes are made on two different branches
-Merge commit    
-Upstream changes
+WORKFLOW
+A branch is a pointer to a commit, in git the default pointer is called master, and this pointer will automatically point to the latest commit made! Unless you create a new pointer (branch), the new pointer can point to other commits. The head pointed to commit on the branch that you are currently working on! 
 
-Working Directory - Local repository - Staging (let you group a set of changes) - Github Repository
-Cherry Pick, Issues, Gist
-
-Git Commands >>>
-  Init (creating a git repository - or changes a unversioned project into a git repository)
-
-Git Workflow
-  Add (Working Directory -> Staging)
-  Commit -m "message" (Staging to Local Repository)
-  Push (Staging -> Github Repository)
-
-Pull (Pull changes from Github Repository -> Local repository)
-
-
-Git log
-Git status
-Git Blame
-Git Diff
-
-Setting Up Git: Download Git, Create User, Setup User, Start :)
-
-(Basic Linux Commands: ls, cd, cd .., echo 'Hello, world.' >hello.txt)
+When you wanna merge your changes into another branch you open a pull-request based on your branch. Normally somebody else will do a code review and thereafter merge or squash merge - squash merge means putting multiple commits into one commit. A branch is build on top of on commit, and while you make commits to one branch there might be other commits to the first branch, if you wanna bring these into you branch it is called; rebase. 
